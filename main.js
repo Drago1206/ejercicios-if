@@ -1,11 +1,13 @@
 addEventListener("DOMContentLoaded",()=>{
-    let tem=0,pres=0
-    tem=Number(prompt("Ingrese la temperatura: "))
-    pres=Number(prompt("Ingrese la presion: "))
-    if(tem>100 && pres>100){
-        alert("ALARMA NOS VAMOS A MORIR :( ")
+    let vr=0,iva=0,des=0
+    vr=Number(prompt("Ingrese el valor que tiene que pagar: "))
+    if(vr>13000){
+    iva=(vr*0.15)
+    des=(vr-iva)
+    document.write(`El total con el descuento es de: ${des}`)
     }else{
-        alert("TA NORMAL RELAJAO :3 ")
+        document.write(`No hay descuento , pida mas pa la proxima :3`)
+
     }
 })
 
