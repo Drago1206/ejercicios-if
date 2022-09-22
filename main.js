@@ -1,12 +1,11 @@
 addEventListener("DOMContentLoaded",()=>{
-    let bas=0, alt=0
-    bas=Number(prompt("Ingrese la base del rectangulo para sacar su area: "))
-    alt=Number(prompt("Ingrese la altura del triangulo: "))
-    if(bas>0 && alt>0){
-        let pr=(bas*alt)
-        document.write(`El area del rectangulo es: ${pr}`)
+    let tem=0,pres=0
+    tem=Number(prompt("Ingrese la temperatura: "))
+    pres=Number(prompt("Ingrese la presion: "))
+    if(tem>100 && pres>100){
+        alert("ALARMA NOS VAMOS A MORIR :( ")
     }else{
-        alert("Los valores tiene que ser poositivos")
+        alert("TA NORMAL RELAJAO :3 ")
     }
 })
 
