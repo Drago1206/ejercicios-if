@@ -1,21 +1,14 @@
 addEventListener("DOMContentLoaded",()=>{
-        let nombre=(prompt("ingrese su nombre:"))
-        let apellido=(prompt("ingrese su apellido:"))
-        let edad=(prompt("ingrese su edad:"))
-    
-        let not1=Number(prompt("dijite su   nota 1:"))
-        let not2=Number(prompt("dijite su   nota 2:"))
-        let not3=Number(prompt("dijite su   nota 3:"))
-        let not4=Number(prompt("dijite su   nota 4:"))
-        let not5=Number(prompt("dijite su   nota 5:"))
-    
-        let prom=(not1+not2+not3+not4+not5)/5
-        if (prom >=5){
-        alert("¡aprobado!")
-        }else{
-        alert("no aprobado")
-    }
-        document.write(`promedio de las    notas :${prom}`)
+let n1=0,n2=0
+n1=Number(prompt("Ingrese el primer digito"))
+n2=Number(prompt("Ingrese el segundo digito"))
+
+if(n1>n2){
+    let rest=(n1-n2)
+    document.write(`El resultado de la resta es: ${rest}`)
+}else{
+    alert("No se puede llevar acabo la operacion porque el segundo digito es mayor que el primero asi q valiste :3")
+}
 })
 
 
