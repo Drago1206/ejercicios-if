@@ -1,12 +1,13 @@
 addEventListener("DOMContentLoaded",()=>{
-    let vr=0,iva=0,des=0
-    vr=Number(prompt("Ingrese el valor que tiene que pagar: "))
-    if(vr>13000){
-    iva=(vr*0.15)
-    des=(vr-iva)
-    document.write(`El total con el descuento es de: ${des}`)
-    }else{
-        document.write(`No hay descuento , pida mas pa la proxima :3`)
+    let carg=0,salp=0,sala=0,hrs=0
+    carg=(prompt("Elija el cargo que le corresponda planta(p) Administrativo(a) "))
+    hrs=Number(prompt("Ingrese las horas trabajadas: "))
+    if(carg=="p"){
+    salp=(hrs*2000)
+    document.write(`El total del pago dependiendo de sus${hrs} horas siendo de planta  es de: ${salp}`)
+    }if(carg=="a"){
+        sala=(hrs*10000)
+        document.write(`El total de su paga  de sus${hrs} horas siendo administrativo es de: ${sala}`)
 
     }
 })
